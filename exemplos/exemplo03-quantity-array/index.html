@@ -12,26 +12,184 @@
 </head>
 
 <body>
+    
+
+    
 
     <div style="text-align: center;">
-        Produto 01
-        <div class="quantity buttons_added">
-            <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
-                class="input-text qty text" size="4" pattern="" inputmode="">
-            <input type="button" value="+" class="plus">
+        <div class="home-component">
+            <image src="/assets/home.jpg" >
+
+                <div class="header-title">
+                    Menu - Faça a sua escolha
+                </div>
+
+                <div class="component">
+                    <div class="component-header">
+                        <div class="component-header-title">
+                            Prato Principal
+                        </div>
+                        <div class="component-header-subtitle">
+                            Todos os pratos acompanham arroz, feijão e a sobremesa do dia.
+    
+                        </div>
+                    </div>
+                    
+            
+                    
+                    
+                    
+           
+                    
+                    
+                    <div class="product-list">
+                        <div class="produto">
+                            <image src="/assets/bife.jpg" style="width: 100%;"></image>
+                            <div>
+                                Bife com batata
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 30,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+                        <div class="produto">
+                            <image src="/assets/coxa.jpg" style="width: 100%;"></image>
+                            <div>
+                                Coxa de frango crocante
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 25,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+                        <div class="produto">
+                            <image src="/assets/panela.jpg" style="width: 100%;"></image>
+                            <div>
+                                Carne de panela
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 22,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="component">
+                    <div class="component-header">
+                        <div class="component-header-title">
+                            Acompanhamentos
+                        </div>
+                        <div class="component-header-subtitle">
+                            Porções para uma pessoa
+    
+                        </div>
+                    </div>
+                    
+            
+                    
+                    
+                    
+           
+                    
+                    
+                    <div class="product-list">
+                        <div class="produto">
+                            <image src="/assets/farofa.jpg" style="width: 100%;"></image>
+                            <div>
+                                Farofa
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 10,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+                        <div class="produto">
+                            <image src="/assets/salad.jpg" style="width: 100%;"></image>
+                            <div>
+                                Salada
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 10,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+                        <div class="produto">
+                            <image src="/assets/torresmo.jpg" style="width: 100%;"></image>
+                            <div>
+                                Torresmo
+                            </div>
+                            <div style="color: #41785D;">
+                                R$ 12,00
+                            </div>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                                    class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+
+
+                <div>
+                    Produto 01
+                
+                </div>
+        
+                <div>
+                    Produto 02
+                <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus">
+                    <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                        class="input-text qty text" size="4" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+                </div>
+        
+        
+                <button onclick="calc()">Mostrar</button>
         </div>
 
-        Produto 02
-        <div class="quantity buttons_added">
-            <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
-                class="input-text qty text" size="4" pattern="" inputmode="">
-            <input type="button" value="+" class="plus">
-        </div>
 
 
-        <button onclick="calc()">Mostrar</button>
+       
         
  
         <div id="output">
