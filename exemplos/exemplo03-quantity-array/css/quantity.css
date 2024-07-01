@@ -43,7 +43,7 @@ body{
 
 .produto{
     border-radius: 10px;
-    width: 25%;
+    width: 27%;
     padding: 10px;
     background-color: #F5F5F5;
     margin: auto;
@@ -90,6 +90,31 @@ body{
 .button{
     width: 95.5%;
     
+}
+
+
+#output{
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    
+}
+
+.user{
+    font-weight: 600;
+}
+
+.data-header-title{
+    margin-bottom: 25px;
+
+}
+
+.data-header-subtitle{
+    margin-bottom:15px ;
 }
 
 .quantity {

@@ -1,33 +1,66 @@
+
+
 var prods = [
-    { id: 1, name: "Produto 1", price: 10.0 },
-    { id: 2, name: "Produto 2", price: 20.0 },
+    { id: 1, name: "Bife com batata", price: 30.0 },
+    { id: 2, name: "Coxa de frango crocante", price: 25.0 },
+    { id: 3, name: "Carne de panela", price: 22.0 },
+    { id: 4, name: "Farofa", price: 10.0 },
+    { id: 5, name: "Salada", price: 10.0 },
+    { id: 6, name: "Torresmo", price: 12.0 },
 ];
 
 function calc(){
     var quantities = document.getElementsByName("quantity");
     var output     = document.getElementById("output");
-    var total      = 0;
+    var usuario    = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var total_prod = 0; 
+    var total = 0; 
     
     output.innerHTML = "";
 
-    for (var input of quantities) {
-        var id = input.id;
-
-        output.innerHTML += `Produto: ${prods[id-1].name}  - Preço: ${prods[id-1].price} - Quantidade: ${input.value} </br>`;
-        total            += prods[id-1].price * parseFloat(input.value);
     
-    
-    }
 
     var formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
 
-    output.innerHTML += `Preço: ${formatter.format(prods[0].price)}</br>`
-    output.innerHTML += `Preço: ${formatter.format(prods[1].price)}</br>`
+    if(usuario && email && phone){
+        output.innerHTML += `<div class="data-header-title"> <span> Caro </span> <span class="user"> ${usuario} </span> </div>`;
+        output.innerHTML += `<div class="data-header-subtitle"> Seguem os dados do seu pedido.</div>`;
+        output.innerHTML += `<div class="data-header-subtitle"> O seu pedido é: </div>`;
 
-    output.innerHTML += `<h2>Total: ${total}</h2>`;
+   
+        for (var input of quantities) {
+            var id = input.id;
+    
+            
+            total_prod = prods[id-1].price * parseFloat(input.value);
+            total += prods[id-1].price * parseFloat(input.value);
+            output.innerHTML += `<li> Prato: ${prods[id-1].name}  - Preço unitário: ${formatter.format(prods[id-1].price)} - Quantidade: ${input.value} - Total: ${formatter.format(total_prod)} </li>`;
+        
+        
+        }
+            
+    
+        
+        console.log(usuario.value)
+    
+       
+    
+        
+        
+    
+        output.innerHTML += `<div class="price"> Preço final: ${formatter.format(total)}</div>`;
+        console.log(output.innerHTML)
+    }
+    else{
+        output.innerHTML += `<h2>Por favor, insire seus dados.</h2>`;
+    }
+
+    
 
 
 }
