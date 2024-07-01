@@ -42,7 +42,7 @@
            
                     
                     
-                    <div class="product-list">
+                    <div class="lista">
                         <div class="produto">
                             <image src="/assets/bife.jpg" style="width: 100%;"></image>
                             <div>
@@ -113,7 +113,7 @@
            
                     
                     
-                    <div class="product-list">
+                    <div class="lista">
                         <div class="produto">
                             <image src="/assets/farofa.jpg" style="width: 100%;"></image>
                             <div>
@@ -166,6 +166,20 @@
                     </div>
                 </div>
 
+                <div class="component">
+                    
+                    <div class="component-header">
+                        <div class="component-header-title">
+                            Dados Pessoais
+                        </div>
+                    </div>
+
+                    <input type="name" class="dados-pessoais" placeholder="Digite o seu nome">
+                    <input type="text" id="phone" class="dados-pessoais" placeholder="Digite o seu telefone"></input>
+                    <input type="email" id="email" class="dados-pessoais" placeholder="Digite o seu email">
+                        
+                </div>
+
 
 
                 <div>
@@ -201,6 +215,11 @@
     <script src="js/jquery-3.6.0.min.js"> </script>
     <script src="js/quantity.js"> </script>
     <script src="js/javascript.js"> </script>
+    <script src="js/jquery.mask.min.js"> </script>
+    <script>
+        $("#phone").mask("(99) 9999-99999");
+    </script>
+    
 
 </body>
 
